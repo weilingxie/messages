@@ -18,9 +18,8 @@ export class MessagesController {
   }
 
   @Get('/:id')
-  getMessageById(@Param() id: number) {
-    const message: Message = { content: `message${id}` };
-    console.log(id);
+  getMessageById(@Param('id') id: string) {
+    const message: Message = { content: id };
     return message;
   }
 }
