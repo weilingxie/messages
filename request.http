@@ -1,5 +1,30 @@
+### Register
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email":"william.xie@gmail.com",
+    "password": "123456"
+}
+
+### Login
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email":"william.xie@gmail.com",
+    "password": "123456"
+}
+
+### Log out
+POST http://localhost:3000/auth/signout
+content-type: application/json
+
 ### List all messages
 GET http://localhost:3000/messages
+
+### Who am I
+GET http://localhost:3000/auth/whoami
 
 ### Create a new message
 POST http://localhost:3000/messages
